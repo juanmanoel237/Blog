@@ -1,0 +1,111 @@
+$lightFreen:#b9e7e7;
+
+.App{
+    display: flex;
+    justify-content: center;
+
+    .container{
+        width: 1024px;
+
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .auth{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            background-color: $lightFreen;
+
+            h1{
+                font-size: 20px;
+                color: teal;
+                margin-bottom: 20px;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 50px;
+                background-color: white;
+                width: 200px;
+                gap: 20px;
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    padding: 10px;
+                }
+
+                button{
+                    padding: 10px;
+                    color: white;
+                    border: none;
+                    background-color: teal;
+                    cursor: pointer;
+                }
+
+                p{
+                    text-align: center;
+                    color: red;
+                    font-size: 15px;
+                }
+
+                span{
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .navbar {
+            .container {
+              padding: 10px 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+          
+              .logo {
+                img {
+                  width: 100px;
+                }
+              }
+          
+              .links {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+          
+                .link {
+                  text-decoration: none;
+                  color: inherit;
+                }
+          
+                h6 {
+                  margin: 0;
+                  font-size: 15px;
+                  font-weight: 300;
+                }
+          
+                span {
+                  margin-left: 10px;
+                  cursor: pointer;
+                }
+          
+                .write {
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  background-color: $lightFreen;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              }
+            }
+          }
+    }
+}
